@@ -2,6 +2,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import {FaCheckCircle, FaYoutube, FaInstagram} from 'react-icons/fa';
 import { useMediaQuery } from 'react-responsive';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 const AboutMajd = () => {
@@ -11,11 +12,30 @@ const AboutMajd = () => {
 useGSAP(() => {
   let position = isDesktop ? "50% 15%" : "center"
   
+  // Wait for images to have dimensions before creating ScrollTrigger
+  const images = document.querySelectorAll('#majd img')
+  let loadedCount = 0
+  
+  const checkAllLoaded = () => {
+    loadedCount++
+    if (loadedCount === images.length) {
+      ScrollTrigger.refresh()
+    }
+  }
+  
+  images.forEach(img => {
+    if (img.complete) {
+      checkAllLoaded()
+    } else {
+      img.addEventListener('load', checkAllLoaded)
+    }
+  })
+  
   let ctx = gsap.context(() => {
     const maskTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#majd",
-        start: 'top 5%',
+        start: 'top top',
         end: 'bottom center',
         scrub: 1.2,
         pin: true,

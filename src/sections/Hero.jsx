@@ -5,7 +5,6 @@ import ConverkitForm from '../Utility/ConverkitForm';
 const Hero = () => {
   return (
     <div className='section bg-primary relative'>
-        <h1>dont' mind this line, I'm testing something...</h1>
         {/* Content wrapper - MUST be above patterns */}
         <div className='flex-center relative z-50'>
             <img src='https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501' className='w-15'/>

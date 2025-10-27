@@ -37,8 +37,8 @@ const App = () => {
     <div>
       <Hero/>
       <AboutProgram/>
-      <Testimonials/>
       <AboutMajd/>
+      <Testimonials/>
       <Opportunity/>
       <Footer/>
     </div>
