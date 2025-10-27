@@ -12,21 +12,21 @@
 }
 
 @utility masked-img{
-  mask-image: url("/MajdIcon.png");
+  mask-image: url("https://ik.imagekit.io/greenraven/MJ/MajdIcon.png?updatedAt=1761577918261");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 50%;
 }
 
 .majdmb{
-  background-image: url("/majdbg.png");
+  background-image: url("https://ik.imagekit.io/greenraven/MJ/majdbg.png?updatedAt=1761577922403");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .majdds{
-  background-image: url("/majdds.png");
+  background-image: url("https://ik.imagekit.io/greenraven/MJ/majdds.png?updatedAt=1761577922292");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

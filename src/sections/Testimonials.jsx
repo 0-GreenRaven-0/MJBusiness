@@ -46,12 +46,12 @@ const Testimonials = () => {
   }, [hasAnimated])
 
   const testimonials = [
-    "/carousel/s1.png",
-    "/carousel/s2.png",
-    "/carousel/s3.png",
-    "/carousel/s4.png",
-    "/carousel/s5.png",
-    "/carousel/s6.png",
+    "https://ik.imagekit.io/greenraven/MJ/carousel/s1.png?updatedAt=1761577625794",
+    "https://ik.imagekit.io/greenraven/MJ/carousel/s2.png?updatedAt=1761577626034",
+    "https://ik.imagekit.io/greenraven/MJ/carousel/s3.png?updatedAt=1761577625825",
+    "https://ik.imagekit.io/greenraven/MJ/carousel/s4.png?updatedAt=1761577626066",
+    "https://ik.imagekit.io/greenraven/MJ/carousel/s5.png?updatedAt=1761577625796",
+    "https://ik.imagekit.io/greenraven/MJ/carousel/s6.png?updatedAt=1761577625776",
   ]
 
   return (

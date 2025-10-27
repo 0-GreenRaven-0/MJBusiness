@@ -8,7 +8,7 @@ const Hero = () => {
         
         {/* Content wrapper - MUST be above patterns */}
         <div className='flex-center relative z-50'>
-            <img src='/dropvault.png' className='w-15'/>
+            <img src='https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501' className='w-15'/>
             <h2>Build Your Business. Earn Real Money Online</h2>
             <h1 className='text-center md:w-[80%] md:text-6xl'>
                 A complete roadmap to <span className='special-word'>financial freedom</span>, backed by <span className='special-word'>proven strategies</span>, <span className='special-word'>real results</span>, and a community that supports your <span className='special-word'>success</span>.
@@ -22,7 +22,7 @@ const Hero = () => {
                   duration={0.5}
                   delay={0.2}
                   retrigger={true}>
-                  <img src='/majdHero.png' className="md:w-170 xl:w-140"/>
+                  <img src='https://ik.imagekit.io/greenraven/MJ/majdHero.png?updatedAt=1761577920517' className="md:w-170 xl:w-140"/>
                 </AppearOnScroll>
 
                 <div className='flex flex-col items-center gap-5'>
