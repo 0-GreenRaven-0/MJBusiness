@@ -9,7 +9,7 @@ const AboutMajd = () => {
   const isDesktop = useMediaQuery({ minWidth: 768 })
 
 useGSAP(() => {
-  let position = isDesktop ? "50% 15%" : "center"
+
   
   let ctx = gsap.context(() => {
     const maskTimeline = gsap.timeline({
@@ -25,15 +25,6 @@ useGSAP(() => {
     })
 
     maskTimeline
-    .to('.willfade', {
-      opacity: 0, stagger: 0.2, ease: 'power1.inOut'
-    })
-    .to('.masked-img', {
-     maskPosition: position,
-     maskSize: '500%', 
-     duration: 1, 
-     ease: 'power1.inOut'
-    })
     .from('.will-appear', {
       opacity: 0,
       y: 50,
@@ -49,14 +40,8 @@ useGSAP(() => {
 
   return (
     <div id='majd' className='min-h-screen relative'>
-        <h1 id='majd-name' className='text-5xl md:text-8xl xl:text-5xl absolute top-30 md:top-10 xl:top-25 left-1/2 -translate-x-1/2 willfade'>Who is Majd Abdulsalam?</h1>
-        <img src="https://ik.imagekit.io/greenraven/MJ/items/item1.png?updatedAt=1761577963346" className='item willfade floating top-85 left-10 md:top-100 md:left-50 xl:top-60 xl:left-80 d1'/>
-        <img src='https://ik.imagekit.io/greenraven/MJ/items/item2.png?updatedAt=1761577963390' className='item willfade floating bottom-85 right-8 md:bottom-135 md:right-45 xl:top-100 xl:right-85 d2'/>
-        <img src='https://ik.imagekit.io/greenraven/MJ/items/item3.png?updatedAt=1761577963105' className='item willfade floating top-72 right-13 md:top-95 md:right-50 xl:top-55 xl:right-100 d3'/>
-        <img src='https://ik.imagekit.io/greenraven/MJ/items/item4.png?updatedAt=1761577963020' className='item willfade floating bottom-70 left-10 md:bottom-120 xl:top-105 md:left-40 xl:left-90 d4'/>
-        <img src='https://ik.imagekit.io/greenraven/MJ/MajdIcon.png?updatedAt=1761577918261' className='absolute top-105! -translate-y-1/2 left-1/2 -translate-x-1/2 w-50 z-100 willfade md:top-170! xl:top-74! md:w-105 xl:w-85 max-md:top-75'/>
 
-        {/* Content */}
+     
       <div className={`p-1 bg-cyan-800 ${isDesktop ? 'majdds' : 'majdmb'} masked-img relative md:[mask-position:50%_50%] md:[mask-size:40%] xl:[mask-position:50%_34%] xl:[mask-size:25%]`}>
         <div className='flex flex-col justify-center items-center gap-4 bg-black/60 rounded-2xl p-1 h-full'>
         <img   src='https://ik.imagekit.io/greenraven/MJ/majd2.png?updatedAt=1761577918178' 
