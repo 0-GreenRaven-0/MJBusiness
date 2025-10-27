@@ -10,36 +10,41 @@ const AboutMajd = () => {
 
 useGSAP(() => {
   let position = isDesktop ? "50% 15%" : "center"
-  const maskTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#majd",
-      start: 'top top',
-      end: 'bottom center',
-      scrub: 1.2,
-      pin: true,
-      anticipatePin: 1, // Prevents premature triggering
-      invalidateOnRefresh: true // Recalculates on resize/refresh
-    }
-  })
+  
+  let ctx = gsap.context(() => {
+    const maskTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#majd",
+        start: 'top top',
+        end: 'bottom center',
+        scrub: 1.2,
+        pin: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true
+      }
+    })
 
-  maskTimeline
-  .to('.willfade', {
-    opacity: 0, stagger: 0.2, ease: 'power1.inOut'
+    maskTimeline
+    .to('.willfade', {
+      opacity: 0, stagger: 0.2, ease: 'power1.inOut'
+    })
+    .to('.masked-img', {
+     maskPosition: position,
+     maskSize: '500%', 
+     duration: 1, 
+     ease: 'power1.inOut'
+    })
+    .from('.will-appear', {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: 'power1.out'
+    })
   })
-  .to('.masked-img', {
-   maskPosition: position, // Fixed: was {position}, should be just position
-   maskSize: '500%', 
-   duration: 1, 
-   ease: 'power1.inOut'
-  })
-  .from('.will-appear', {
-    opacity: 0,
-    y: 50,
-    stagger: 0.2,
-    duration: 0.8,
-    ease: 'power1.out'
-  })
-})
+  
+  return () => ctx.revert()
+}, [isDesktop])
 
 
   return (
