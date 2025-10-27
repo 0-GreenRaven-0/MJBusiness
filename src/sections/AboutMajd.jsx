@@ -15,7 +15,7 @@ useGSAP(() => {
     const maskTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#majd",
-        start: 'top top',
+        start: 'top 5%',
         end: 'bottom center',
         scrub: 1.2,
         pin: true,
