@@ -1,16 +1,20 @@
 import AppearOnScroll from '../Utility/AppearOnScroll';
 import {FaCheckCircle} from 'react-icons/fa';
 import ConverkitForm from '../Utility/ConverkitForm';
+import { useTranslation } from 'react-i18next';
+import Header from './Header';
 
 const Hero = () => {
+  const {t} = useTranslation()
+
   return (
     <div className='section bg-primary relative'>
-        {/* Content wrapper - MUST be above patterns */}
+      <Header/>
         <div className='flex-center relative z-50'>
-            <img src='https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501' className='w-15'/>
-            <h2>Build Your Business. Earn Real Money Online</h2>
-            <h1 className='text-center md:w-[80%] md:text-6xl'>
-                A complete roadmap to <span className='special-word'>financial freedom</span>, backed by <span className='special-word'>proven strategies</span>, <span className='special-word'>real results</span>, and a community that supports your <span className='special-word'>success</span>.
+
+        <h2>{t('hero.subtitle')}</h2>
+            <h1 className='text-center md:w-[65%] md:text-5xl'>
+                {t('hero.titlePart1')}<span className='special-word'>{t('hero.titleHighlight1')}</span>{t('hero.titlePart2')}<span className='special-word'>{t('hero.titleHighlight2')}</span>{t('hero.titlePart3')}<span className='special-word'>{t('hero.titleHighlight3')}</span>{t('hero.titlePart4')}
             </h1>
             <br/>
 
@@ -25,7 +29,7 @@ const Hero = () => {
                 </AppearOnScroll>
 
                 <div className='flex flex-col items-center gap-5'>
-                    <h3 className='text-center -mb-5'>Brought to you by</h3>
+                    <h3 className='text-center -mb-5'>{t('hero.broughtBy')}</h3>
 
                     <AppearOnScroll 
                       animation="fade-up"
@@ -36,7 +40,7 @@ const Hero = () => {
                         <h2 className='name'>Majd Abdulsalam</h2>
                     </AppearOnScroll>
 
-                    <ul className='flex flex-col items-start gap-5'>
+          <ul className='flex flex-col items-start gap-5'>
                         <AppearOnScroll 
                           animation="fade-up"
                           threshold={0.3}
@@ -45,7 +49,7 @@ const Hero = () => {
                           retrigger={true}>
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
-                              Earn real income online in dollars from anywhere!
+                              {t('hero.bullet1')}
                             </li>
                         </AppearOnScroll>
 
@@ -57,7 +61,7 @@ const Hero = () => {
                           retrigger={true}>
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
-                              Master the skills that actually pay
+                              {t('hero.bullet2')}
                             </li>
                         </AppearOnScroll>
 
@@ -69,7 +73,7 @@ const Hero = () => {
                           retrigger={true}>
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
-                              Join dozens who've already transformed their financial future
+                              {t('hero.bullet3')}
                             </li>
                         </AppearOnScroll>
 
@@ -81,7 +85,7 @@ const Hero = () => {
                           retrigger={true}>
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
-                              Get proven strategies + real support every step
+                              {t('hero.bullet4')}
                             </li>
                         </AppearOnScroll>
                     </ul>

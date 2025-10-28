@@ -3,11 +3,13 @@ import { useGSAP } from '@gsap/react'
 import {FaCheckCircle, FaYoutube, FaInstagram} from 'react-icons/fa';
 import { useMediaQuery } from 'react-responsive';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useTranslation } from 'react-i18next';
 
 
 const AboutMajd = () => {
-
+  const {t, i18n} = useTranslation()
   const isDesktop = useMediaQuery({ minWidth: 768 })
+  const isArabic = i18n.language === 'ar'
 
 useGSAP(() => {
   let position = isDesktop ? "50% 15%" : "center"
@@ -69,12 +71,12 @@ useGSAP(() => {
 
   return (
     <div id='majd' className='min-h-screen relative'>
-        <h1 id='majd-name' className='text-5xl md:text-8xl xl:text-5xl absolute top-30 md:top-10 xl:top-25 left-1/2 -translate-x-1/2 willfade'>Who is Majd Abdulsalam?</h1>
+<h1 id='majd-name' className={`text-5xl md:text-8xl xl:text-5xl absolute ${isArabic ? 'top-20 md:top-5 xl:top-20' : 'top-30 md:top-10 xl:top-25'} left-1/2 -translate-x-1/2 willfade ${isArabic ? 'md:w-[90%] xl:w-[70%]' : ''} text-center`}>{t('aboutMajd.title')}</h1>
         <img src="https://ik.imagekit.io/greenraven/MJ/items/item1.png?updatedAt=1761577963346" className='item willfade floating top-85 left-10 md:top-100 md:left-50 xl:top-60 xl:left-80 d1'/>
         <img src='https://ik.imagekit.io/greenraven/MJ/items/item2.png?updatedAt=1761577963390' className='item willfade floating bottom-85 right-8 md:bottom-135 md:right-45 xl:top-100 xl:right-85 d2'/>
         <img src='https://ik.imagekit.io/greenraven/MJ/items/item3.png?updatedAt=1761577963105' className='item willfade floating top-72 right-13 md:top-95 md:right-50 xl:top-55 xl:right-100 d3'/>
         <img src='https://ik.imagekit.io/greenraven/MJ/items/item4.png?updatedAt=1761577963020' className='item willfade floating bottom-70 left-10 md:bottom-120 xl:top-105 md:left-40 xl:left-90 d4'/>
-        <img src='https://ik.imagekit.io/greenraven/MJ/MajdIcon.png?updatedAt=1761577918261' className='absolute top-105! -translate-y-1/2 left-1/2 -translate-x-1/2 w-50 z-100 willfade md:top-170! xl:top-74! md:w-105 xl:w-85 max-md:top-75'/>
+<img src='https://ik.imagekit.io/greenraven/MJ/MajdIcon.png?updatedAt=1761577918261' className={`absolute ${isArabic ? 'top-100! md:top-160! xl:top-77!' : 'top-108! md:top-170! xl:top-76!'} -translate-y-1/2 left-1/2 -translate-x-1/2 w-50 z-100 willfade md:w-105 xl:w-85 ${isArabic ? 'max-md:top-65' : 'max-md:top-75'}`}/>
 
         {/* Content */}
       <div className={`p-1 bg-cyan-800 ${isDesktop ? 'majdds' : 'majdmb'} masked-img relative md:[mask-position:50%_50%] md:[mask-size:40%] xl:[mask-position:50%_34%] xl:[mask-size:25%]`}>
@@ -90,53 +92,64 @@ useGSAP(() => {
           className='will-appear md:w-160 xl:w-100'
           />
           <h2 className='name will-appear'>Majd Abdulsalam</h2>
-<div className='flex flex-col gap-3 will-appear'>
-<div className='flex items-center gap-4 md:gap-6'>
-  <a 
-    href='https://www.instagram.com/mjbusinessofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' 
-    target='_blank' 
-    rel='noopener noreferrer'
-    className='flex items-center gap-2 md:gap-4 xl:gap-2 hover:scale-105 transition-transform'
-  >
-    <div className='bg-cyan-500/10 p-3 md:p-6 xl:p-3 rounded-full flex items-center justify-center'>
-      <FaInstagram className='w-[30px] h-[30px] md:w-[48px] md:h-[48px] xl:w-[30px] xl:h-[30px]' color='cyan'/>
-    </div>
-    <span className='text-cyan-400 text-base md:text-2xl xl:text-base'>Instagram</span>
-  </a>
+          <h3 className='font-bold -mt-3 will-appear'>{t('aboutMajd.role')}</h3>
 
-  <a 
-    href='https://youtube.com/@mj.biznes?si=-eCOC_aZf9EaGBhd' 
-    target='_blank' 
-    rel='noopener noreferrer'
-    className='flex items-center gap-2 md:gap-4 xl:gap-2 hover:scale-105 transition-transform'
-  >
-    <div className='bg-cyan-500/10 p-3 md:p-6 xl:p-3 rounded-full flex items-center justify-center'>
-      <FaYoutube className='w-[30px] h-[30px] md:w-[48px] md:h-[48px] xl:w-[30px] xl:h-[30px]' color='cyan'/>
-    </div>
-    <span className='text-cyan-400 text-base md:text-2xl xl:text-base'>YouTube</span>
-  </a>
-</div>
-</div>
           <div>
             <ul className='flex flex-col items-start gap-2'>
             <li className='bl-point will-appear'>
               <FaCheckCircle size={30} color='cyan' style={{ minWidth: '30px', minHeight: '30px', flexShrink: 0 }}/>
-              Founder of Lebanon's 1st Dropshipping Software
+              {t('aboutMajd.bullet1')}
             </li>
             <li className='bl-point will-appear'>
               <FaCheckCircle size={30} color='cyan' style={{ minWidth: '30px', minHeight: '30px', flexShrink: 0 }}/>
-              Achieved 6 figures+ through E-Commerce
+              {t('aboutMajd.bullet2')}
             </li>
             <li className='bl-point will-appear'>
               <FaCheckCircle size={30} color='cyan' style={{ minWidth: '30px', minHeight: '30px', flexShrink: 0 }}/>
-              Helped lots of individuals achieve financial freedom
+              {t('aboutMajd.bullet3')}
             </li>
           </ul>
           </div>
  
+ <div className='flex items-center gap-6 will-appear' style={{ pointerEvents: 'auto', touchAction: 'manipulation' }}>
+  <button
+    onClick={() => window.open('https://www.instagram.com/mjbusinessofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')}
+    className='flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors'
+    style={{ 
+      pointerEvents: 'auto', 
+      background: 'none', 
+      border: 'none', 
+      cursor: 'pointer', 
+      padding: '12px',
+      touchAction: 'manipulation',
+      WebkitTapHighlightColor: 'transparent'
+    }}
+  >
+    <FaInstagram size={24} />
+    <span className='underline'>{t('aboutMajd.instagram')}</span>
+  </button>
+
+  <button
+    onClick={() => window.open('https://youtube.com/@mj.biznes?si=-eCOC_aZf9EaGBhd', '_blank')}
+    className='flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors'
+    style={{ 
+      pointerEvents: 'auto', 
+      background: 'none', 
+      border: 'none', 
+      cursor: 'pointer', 
+      padding: '12px',
+      touchAction: 'manipulation',
+      WebkitTapHighlightColor: 'transparent'
+    }}
+  >
+    <FaYoutube size={24} />
+    <span className='underline'>{t('aboutMajd.youtube')}</span>
+  </button>
+</div>
           <p className='will-appear md:w-[90%] md:px-0 pb-10'>
-            Majd built his success through trial and error, testing what actually works. After helping dozens of people, he created this program to give you the same proven system, high income skills, and support that led to his success.
+            {t('aboutMajd.description')}
           </p>
+          
         </div>
   
       </div>

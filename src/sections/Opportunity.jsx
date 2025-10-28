@@ -1,8 +1,11 @@
 import InfiniteCarousel from '../Utility/InfiniteCarousel';
 import AppearOnScroll from '../Utility/AppearOnScroll';
 import ConverkitForm from '../Utility/ConverkitForm';
+import { FaCheckCircle } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Opportunity = () => {
+  const {t} = useTranslation()
 
     const images = [
     "/carousel/s1.png",
@@ -21,23 +24,92 @@ const Opportunity = () => {
           <AppearOnScroll 
           retrigger={true}
           >
-            <h1 className='text-center'>What If This Was Your Turning Point?</h1>
+            <h1 className='text-center'>{t('opportunity.title')}
+          </h1>
           </AppearOnScroll>
           <AppearOnScroll
           retrigger={true}
           >
-              <p>Right now, most people feel stuck, working hard but never getting ahead, dreaming about financial freedom but not knowing where to start.</p>
+              <p>{t('opportunity.description')}</p>
           </AppearOnScroll>
-          <AppearOnScroll
-          retrigger={true}
-          >
-            <p>But there's a real path forward. A proven way to earn actual income online. A chance to finally live life on your terms.</p>
-          </AppearOnScroll>
+<ul className='flex flex-col items-start justify-center w-full gap-5 max-w-3xl mx-auto'>
+  <AppearOnScroll 
+    animation="fade-up"
+    threshold={0.3}
+    duration={0.5}
+    delay={0.3}
+    retrigger={true}>
+    <li className='bl-point'>
+      <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
+      {t('opportunity.bullet1')}
+    </li>
+  </AppearOnScroll>
+
+  <AppearOnScroll 
+    animation="fade-up"
+    threshold={0.3}
+    duration={0.5}
+    delay={0.4}
+    retrigger={true}>
+    <li className='bl-point'>
+      <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
+      {t('opportunity.bullet2')}
+    </li>
+  </AppearOnScroll>
+
+  <AppearOnScroll 
+    animation="fade-up"
+    threshold={0.3}
+    duration={0.5}
+    delay={0.5}
+    retrigger={true}>
+    <li className='bl-point'>
+      <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
+      {t('opportunity.bullet3')}
+    </li>
+  </AppearOnScroll>
+
+  <AppearOnScroll 
+    animation="fade-up"
+    threshold={0.3}
+    duration={0.5}
+    delay={0.6}
+    retrigger={true}>
+    <li className='bl-point'>
+      <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
+      {t('opportunity.bullet4')}
+    </li>
+  </AppearOnScroll>
+
+  <AppearOnScroll 
+    animation="fade-up"
+    threshold={0.3}
+    duration={0.5}
+    delay={0.7}
+    retrigger={true}>
+    <li className='bl-point'>
+      <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
+      {t('opportunity.bullet5')}
+    </li>
+  </AppearOnScroll>
+
+  <AppearOnScroll 
+    animation="fade-up"
+    threshold={0.3}
+    duration={0.5}
+    delay={0.8}
+    retrigger={true}>
+    <li className='bl-point'>
+      <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
+      {t('opportunity.bullet6')}
+    </li>
+  </AppearOnScroll>
+</ul>
 
           <AppearOnScroll
           retrigger={true}
           >
-              <h2 className='text-center'>Majd's program has helped dozens break free and earn real money.</h2>
+              <h2 className='text-center'>{t('opportunity.socialProof')}</h2>
           </AppearOnScroll>
 
           <InfiniteCarousel 
@@ -52,7 +124,7 @@ const Opportunity = () => {
           <AppearOnScroll
           retrigger={true}
           >
-            <h2 className='text-center'>This Could be you!</h2>
+            <h2 className='text-center'>{t('opportunity.couldBeYou')}</h2>
           </AppearOnScroll>
         </div>
 
@@ -60,13 +132,13 @@ const Opportunity = () => {
           <AppearOnScroll
           retrigger={true}
           >
-            <h1 className='text-center'>Ready to learn how this actually works?</h1>
+            <h1 className='text-center'>{t('opportunity.ctaTitle')}</h1>
           </AppearOnScroll>
 
           <AppearOnScroll
           retrigger={true}
           >
-              <p>Enter your email below and we'll send you the complete details, what's inside the program, how it helps you succeed, and how you can join.</p>
+              <p>{t('opportunity.ctaDescription')}</p>
           </AppearOnScroll>
 
           <AppearOnScroll

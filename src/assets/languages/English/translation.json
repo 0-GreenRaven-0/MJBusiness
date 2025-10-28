@@ -1,0 +1,78 @@
+{
+  "header": {
+    "languageToggle": "English"
+  },
+  "hero": {
+    "subtitle": "Launch Your E-Commerce Business the Smart Way",
+    "title": "The dropshipping software that made e-commerce easier, no massive inventory needed. Start small, save money, and scale smart from day one.",
+    "titlePart1": "The ",
+    "titleHighlight1": "dropshipping software",
+    "titlePart2": " that made e-commerce easier, no massive inventory needed. ",
+    "titleHighlight2": "Start small",
+    "titlePart3": ", save money, and ",
+    "titleHighlight3": "scale smart",
+    "titlePart4": " from day one.",
+    "broughtBy": "Brought to you by",
+    "bullet1": "Start dropshipping without massive inventory costs",
+    "bullet2": "Earn real income online in dollars from anywhere",
+    "bullet3": "Test products and scale smart with local dropshipping",
+    "bullet4": "Get proven strategies + real support every step"
+  },
+    "aboutMajd": {
+    "title": "Who is Majd Abdulsalam?",
+    "role": "Digital Marketing Expert",
+    "bullet1": "Founder of Lebanon's 1st Dropshipping Software",
+    "bullet2": "Achieved 6 figures+ through E-Commerce",
+    "bullet3": "Helped lots of individuals achieve financial freedom",
+    "instagram": "Instagram",
+    "youtube": "YouTube",
+    "description": "Majd built his success through trial and error, testing what actually works. After helping dozens of people, he created this program to give you the same proven system, high income skills, and support that led to his success."
+  },
+  "opportunity": {
+    "title": "Ready to build your e-commerce business without betting your savings?",
+    "description": "Instead of traditional dropshipping where you order hundreds of products and hope they sell, you get software that lets you test first. No huge orders, no wasted money, just smart business.",
+    "bullet1": "Test products without spending thousands upfront",
+    "bullet2": "Learn proven strategies that actually work",
+    "bullet3": "Start earning real income in dollars from day one",
+    "bullet4": "Get support from experts who already succeeded",
+    "bullet5": "Build your business without risking your savings",
+    "bullet6": "Access the complete system—software, training, and community",
+    "socialProof": "Hundreds already making real sales and building income with this system",
+    "couldBeYou": "This Could be you!",
+    "ctaTitle": "Ready to learn how this actually works?",
+    "ctaDescription": "Enter your email and get instant access to how the system works, what's included, and how to start building your business."
+  },
+  "footer": {
+    "copyright": "MJ Business © 2025. All Rights Reserved.",
+    "disclaimer": "This site is not a part of the Facebook, Instagram, YouTube, or any social media platform. Additionally, this site is NOT endorsed by any of these platforms in any way.",
+    "earningsTitle": "IMPORTANT: Earnings and Legal Disclaimers",
+    "earnings1": "Earnings and income representations made by Majd Abed Al Salam, MJ Business, and associated testimonials are examples of what is possible, not 100% guaranteed. Results shown are not typical. Individual results vary and depend entirely on your effort, dedication, business skills, experience, and ability to follow the program.",
+    "earnings2": "MJ Business and Majd Abed Al Salam are not responsible for your actions or results. You are solely responsible for your own decisions and outcomes. The use of this program and its materials is at your own risk.",
+    "earnings3": "MJ Business may recommend tools, courses, or services. We only recommend resources we believe are valuable. Some recommendations may result in compensation, though this does not affect the price you pay."
+  },
+  "form": {
+    "emailPlaceholder": "Enter your email",
+    "submitButton": "JOIN NOW!"
+  },
+    "freeValue": {
+    "imageCaption": "Everything you need to get started!",
+    "title": "A Built-For-You free guide to help start your dropshipping business",
+    "titlePart1": "A ",
+    "titleHighlight": "Built-For-You",
+    "titlePart2": " free guide to help start your dropshipping business",
+    "value": "Valued at 997$!",
+    "description": "In this guide, you will be walked through everything you need to know in order to start your dropshipping business from:",
+    "bullet1": "How to find a winning product that actually sell",
+    "bullet2": "How to build your online store",
+    "bullet3": "How to run ads to sell your products",
+    "bullet4": "How to use AI to your advantage"
+  },
+    "testimonials": {
+    "studentsCount": "Students using our Software",
+    "studentsCountPrefix": "Over ",
+    "studentsCountSuffix": "+ Students using our Software",
+    "businessesCount": "Businesses launched & scaled",
+    "businessesCountPrefix": "",
+    "businessesCountSuffix": "+ Businesses launched & scaled"
+  }
+}

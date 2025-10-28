@@ -22,8 +22,9 @@ const AboutProgram = () => {
     
 
       <AppearOnScroll animation="fade-up" threshold={0.3} retrigger={true} delay={0.3}>
-        <p>Majd earned his success the hard way. He studied, tested, and learned from top entrepreneurs until he found what works. This program gives you the complete system and all the steps for you to get started.</p>
+       <p>After lots of experiments, testing strategies, using exclusive knowledge from paid courses sold by top high figures entrepreneurs, the key to start dropshipping business in Lebanon has been revealed. All crafted in a single program that contains the exact methods & strategies to start your own.</p>
       </AppearOnScroll>
+
 
       <AppearOnScroll animation="fade-up" threshold={0.3} retrigger={true} delay={0.4}>
         <p>Join to access this knowledge!</p>
