@@ -125,7 +125,7 @@ useGSAP(() => {
       WebkitTapHighlightColor: 'transparent'
     }}
   >
-    <FaInstagram className='w-15 h-auto xl:w-6'/>
+    <FaInstagram className='w-8 md:w-15 h-auto xl:w-6'/>
     <span className='underline md:text-4xl xl:text-lg'>{t('aboutMajd.instagram')}</span>
   </button>
 
@@ -142,7 +142,7 @@ useGSAP(() => {
       WebkitTapHighlightColor: 'transparent'
     }}
   >
-    <FaYoutube className='w-15 h-auto xl:w-6' />
+    <FaYoutube className='w-8 md:w-15 h-auto xl:w-6' />
     <span className='underline md:text-4xl xl:text-lg'>{t('aboutMajd.youtube')}</span>
   </button>
 </div>
