@@ -5,6 +5,7 @@ import Opportunity from "./sections/Opportunity";
 import AboutProgram from './sections/AboutProgram';
 import Footer from "./sections/Footer";
 import FreeValue from "./sections/FreeValue";
+import AboutSaas from "./sections/AboutSaas";
 
 import {ScrollTrigger, SplitText} from 'gsap/all'
 import gsap from "gsap";
@@ -38,8 +39,9 @@ const App = () => {
   return (
     <div>
       <Hero/>
-      <Testimonials/>
       <AboutMajd/>
+      <AboutSaas/>
+      <Testimonials/>
       <FreeValue/>
       <Opportunity/>
       <Footer/>

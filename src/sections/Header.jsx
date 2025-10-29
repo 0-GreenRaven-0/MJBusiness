@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className='flex items-center justify-center px-4 py-2 relative z-[100]'>
+    <header className='flex items-center justify-center px-4 py-2 relative z-100'>
       <img 
         src='https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501' 
         className='w-15'
