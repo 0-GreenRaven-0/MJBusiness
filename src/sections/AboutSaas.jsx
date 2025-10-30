@@ -8,7 +8,7 @@ const AboutSaas = () => {
   return (
     <div className='section flex flex-col gap-5 py-5 bg-guide2'>
       <AppearOnScroll animation="fade-up" threshold={0.3}  retrigger={true}>
-        <h1 className="text-center">{t('aboutSaas.title')}</h1>
+        <h1 className="text-center  md:text-6xl xl:text-5xl">{t('aboutSaas.title')}</h1>
       </AppearOnScroll>
 
       <AppearOnScroll animation="fade-up" threshold={0.3}  retrigger={true}>
