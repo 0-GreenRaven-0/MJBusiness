@@ -52,7 +52,7 @@ const FreeGuideForm = () => {
               <div></div>
               <div></div>
             </div>
-            <span>Send Me The Free Guide!</span>
+            <span>{t('form.freeguide')}</span>
           </button>
         </div>
       </div>

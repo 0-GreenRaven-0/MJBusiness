@@ -54,7 +54,8 @@
   },
   "form": {
     "emailPlaceholder": "أدخل بريدك الإلكتروني",
-    "submitButton": "انضم الآن!"
+    "submitButton": "انضم الآن!",
+    "freeguide": "أرسل لي الدليل المجاني!"
   },
     "freeValue": {
     "imageCaption": "كل ما تحتاجه للبدء!",

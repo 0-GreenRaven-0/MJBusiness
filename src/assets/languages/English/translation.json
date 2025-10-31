@@ -52,7 +52,8 @@
   },
   "form": {
     "emailPlaceholder": "Enter your email",
-    "submitButton": "JOIN NOW!"
+    "submitButton": "JOIN NOW!",
+    "freeguide": "Send Me The Free Guide!"
   },
     "freeValue": {
     "imageCaption": "Everything you need to get started!",
