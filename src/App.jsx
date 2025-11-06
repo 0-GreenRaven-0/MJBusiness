@@ -1,4 +1,4 @@
-import MainPage from './mainPage';
+import MainPage from './MainPage';
 import ThankYouPage from './ThankYouPage';
 import ConfirmationPage from './ConfirmationPage';
 import {ScrollTrigger, SplitText} from 'gsap/all'
