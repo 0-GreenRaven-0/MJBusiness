@@ -88,5 +88,20 @@
     "ctaQuestion": "Want the complete breakdown and access details?",
     "pride": "This software has outshined traditional dropshipping and changed the game for hundreds of businesses.",
     "testimonialIntro": "But you don't have to take our word for it..."
+  },
+  "confirmationPage":{
+      "heading": "Email Confirmed!",
+      "subheading": "You're all set! We can't wait to have you with us!",
+      "button": "Back to Home"
+  },
+    "thankYouPage":{
+      "heading": "You're In!",
+      "subheading": "Check your email to confirm your subscription",
+      "button": "Back to Home"
+  },
+  "dropshipping":{
+    "bullet1": "Find a winning product that solves a real problem",
+    "bullet2": "Run ads on social media to reach your buying customers",
+    "bullet3": "Have the product shipped directly from supplier to your customers"
   }
 }

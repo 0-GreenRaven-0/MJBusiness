@@ -1,15 +1,11 @@
-import Hero from "./sections/Hero";
-import Testimonials from "./sections/Testimonials";
-import AboutMajd from "./sections/AboutMajd";
-import Opportunity from "./sections/Opportunity";
-import AboutProgram from './sections/AboutProgram';
-import Footer from "./sections/Footer";
-import FreeValue from "./sections/FreeValue";
-import AboutSaas from "./sections/AboutSaas";
-
+import MainPage from './mainPage';
+import ThankYouPage from './ThankYouPage';
+import ConfirmationPage from './ConfirmationPage';
 import {ScrollTrigger, SplitText} from 'gsap/all'
 import gsap from "gsap";
 import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router';
+
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -37,15 +33,13 @@ const App = () => {
   }, [])
 
   return (
-    <div>
-      <Hero/>
-      <AboutMajd/>
-      <AboutSaas/>
-      <Testimonials/>
-      <FreeValue/>
-      <Opportunity/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<MainPage/>}/>
+      <Route path='/thank-you' element={<ThankYouPage/>}/>
+      <Route path='/confirmed' element={<ConfirmationPage/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
