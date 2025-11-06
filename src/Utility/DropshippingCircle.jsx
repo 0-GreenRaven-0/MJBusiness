@@ -1,19 +1,21 @@
 import { useState, useEffect } from 'react';
 import { FiPackage, FiShoppingCart, FiTruck, FiDollarSign } from 'react-icons/fi';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 
 export default function DropshippingCircle() {
   const [dotRotation, setDotRotation] = useState(0);
   const [activeIcon, setActiveIcon] = useState(null);
   const isTablet = useMediaQuery({ minWidth: 768 })
   const isDesktop = useMediaQuery({ minWidth: 1280 })
+  const { t } = useTranslation();
   
   // Icons configuration with their positions (in degrees)
   const icons = [
-    { Icon: FiPackage, position: 0, label: 'Product', id: 0 },
-    { Icon: FiShoppingCart, position: 90, label: 'Order', id: 1 },
-    { Icon: FiTruck, position: 180, label: 'Shipping', id: 2 },
-    { Icon: FiDollarSign, position: 270, label: 'Sales', id: 3 }
+    { Icon: FiPackage, position: 0, label: t('dropshippingCircle.product'), id: 0 },
+    { Icon: FiShoppingCart, position: 90, label: t('dropshippingCircle.order'), id: 1 },
+    { Icon: FiTruck, position: 180, label: t('dropshippingCircle.shipping'), id: 2 },
+    { Icon: FiDollarSign, position: 270, label: t('dropshippingCircle.sales'), id: 3 }
   ];
 
   useEffect(() => {
