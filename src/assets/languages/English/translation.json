@@ -99,9 +99,20 @@
       "subheading": "Check your email to confirm your subscription",
       "button": "Back to Home"
   },
-  "dropshipping":{
+  "dropshipping": {
+    "title": "What exactly is drop",
+    "titleHighlight": "shipping",
+    "description": "Dropshipping is an online business model where you sell different kinds of products through an online Shopify store, similar to e-commerce, except you don't have to manage inventory.",
+    "howItWorksTitle": "How does it work?",
     "bullet1": "Find a winning product that solves a real problem",
     "bullet2": "Run ads on social media to reach your buying customers",
-    "bullet3": "Have the product shipped directly from supplier to your customers"
-  }
+    "bullet3": "Have the product shipped directly from supplier to your customers",
+    "closing": "Based on this model, Majd was able to develop his dropshipping software that contains the tools, knowledge, strategies, and all his experience so you never have to start from scratch."
+  },
+  "dropshippingCircle": {
+  "product": "Product",
+  "order": "Order",
+  "shipping": "Shipping",
+  "sales": "Sales"
+}
 }
