@@ -6,6 +6,7 @@ import FreeValue from "./sections/FreeValue"
 import Opportunity from "./sections/Opportunity"
 import Footer from "./sections/Footer"
 import Dropshipping from "./sections/Dropshipping"
+import IsForYou from "./sections/IsForYou"
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
       <AboutMajd/>
       <AboutSaas/>
       <Testimonials/>
+      <IsForYou/>
       <Dropshipping/>
       <FreeValue/>
       <Opportunity/>

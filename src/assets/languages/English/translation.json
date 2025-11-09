@@ -3,7 +3,7 @@
     "languageToggle": "English"
   },
   "hero": {
-    "subtitle": "Launch Your E-Commerce Business the Smart Way",
+    "subtitle": "Risk-Free Guaranteed! Get your Money Back if you don't get any results!",
     "title": "The dropshipping software that made e-commerce easier, no massive inventory needed. Start small, save money, and scale smart from day one.",
     "titlePart1": "The ",
     "titleHighlight1": "dropshipping software",
@@ -77,7 +77,7 @@
     "businessesCountSuffix": "+ Businesses launched & scaled"
   },
    "aboutSaas": {
-    "title": "But what is this Software Exactly?",
+    "title": "Never waste your time & budget while trying to learn to start your own business",
     "description": "It's the first dropshipping software to ever exist in the Arab Region that completely changes how you start and run your e-commerce business.",
     "subtitle": "With it, you'll access to the following:",
     "card1": "Test products without ordering bulk inventory. See what sells before you invest big.",
@@ -114,5 +114,22 @@
   "order": "Order",
   "shipping": "Shipping",
   "sales": "Sales"
+},
+"isForYou": {
+  "heading": "This is Not a",
+  "getRich": "Get Rich Overnight Scheme",
+  "subheading": "It all depends on the amount of effort you're ready to put.",
+  "forYouTitle": "This is for you if:",
+  "forYouPoints": [
+    "You're willing to put in the effort to learn about dropshipping",
+    "You're willing to fully interact with this system and make the best use out of it.",
+    "Got access to a small budget of $200~$300 to run ads"
+  ],
+  "notForYouTitle": "This is NOT for you if:",
+  "notForYouPoints": [
+    "If you think this is a get rich quick scheme",
+    "Don't have time at all to learn and invest in the system",
+    "Think you'll achieve the shown results without putting the required effort"
+  ]
 }
 }

@@ -8,7 +8,7 @@ const Dropshipping = () => {
   const {t} = useTranslation()
   
   return (
-    <div className='px-2 pt-10 pb-20 bg-gray-500 text-darkCyan'>
+    <div className='px-2 pt-10 pb-20 text-darkCyan'>
       <AppearOnScroll 
         animation="fade-up"
         threshold={0.3}
