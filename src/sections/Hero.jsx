@@ -24,7 +24,7 @@ const Hero = () => {
                   threshold={0.1}
                   duration={0.5}
                   delay={0.2}
-                  retrigger={true}>
+                  >
                   <img src='https://ik.imagekit.io/greenraven/MJ/majdHero.png?updatedAt=1761577920517' className="md:w-170 xl:w-140"/>
                 </AppearOnScroll>
 
@@ -36,7 +36,7 @@ const Hero = () => {
                       threshold={0.3}
                       duration={0.5}
                       delay={0.2}
-                      retrigger={true}>
+                      >
                         <h2 className='name'>Majd Abdulsalam</h2>
                     </AppearOnScroll>
 
@@ -46,7 +46,7 @@ const Hero = () => {
                           threshold={0.3}
                           duration={0.5}
                           delay={0.3}
-                          retrigger={true}>
+                          >
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
                               {t('hero.bullet1')}
@@ -58,7 +58,7 @@ const Hero = () => {
                           threshold={0.3}
                           duration={0.5}
                           delay={0.4}
-                          retrigger={true}>
+                          >
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
                               {t('hero.bullet2')}
@@ -70,7 +70,7 @@ const Hero = () => {
                           threshold={0.3}
                           duration={0.5}
                           delay={0.5}
-                          retrigger={true}>
+                          >
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
                               {t('hero.bullet3')}
@@ -82,7 +82,7 @@ const Hero = () => {
                           threshold={0.3}
                           duration={0.5}
                           delay={0.6}
-                          retrigger={true}>
+                          >
                             <li className='bl-point'>
                               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
                               {t('hero.bullet4')}
@@ -95,7 +95,7 @@ const Hero = () => {
                       threshold={0.3}
                       duration={0.5}
                       delay={0.7}
-                      retrigger={true}>
+                      >
                         <ConverkitForm/>
                     </AppearOnScroll>
                 </div>

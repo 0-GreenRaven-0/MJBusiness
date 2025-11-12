@@ -5,6 +5,42 @@ const ConvertKitForm = () => {
   
   return (
     <>
+      <style>{`
+        @keyframes shine {
+          0% {
+            left: -100%;
+          }
+          50% {
+            left: 150%;
+          }
+          100% {
+            left: 150%;
+          }
+        }
+        
+        .shine-effect {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .shine-effect::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 30%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.9) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          animation: shine 4s ease-in-out infinite;
+          transform: skewX(-20deg);
+        }
+      `}</style>
+      
       <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
       <form 
         action="https://app.kit.com/forms/8721927/subscriptions" 
@@ -20,10 +56,10 @@ const ConvertKitForm = () => {
       >
         <div data-style="clean">
           <ul className="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-          <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields flex flex-col md:flex-row gap-3 items-center md:gap-6">
+          <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields flex flex-col md:flex-row gap-0 items-center md:gap-6">
             <div className="formkit-field flex-1 w-full">
               <input 
-                className="formkit-input w-full px-4 py-3 md:px-8 md:py-6 xl:px-4 xl:py-3 placeholder-cyan-300 md:text-2xl xl:text-base" 
+                className="formkit-input w-full px-4 py-3 md:px-8 md:py-6 xl:px-4 xl:py-3 placeholder-cyan-300 md:text-2xl xl:text-2xl" 
                 name="email_address" 
                 aria-label="Email Address" 
                 placeholder={t('form.emailPlaceholder')}
@@ -40,7 +76,7 @@ const ConvertKitForm = () => {
             </div>
             <button 
               data-element="submit" 
-              className="formkit-submit px-8 py-3 md:px-16 md:py-6 xl:px-8 xl:py-3 font-bold cursor-pointer transition-transform duration-300 hover:scale-105 md:text-2xl xl:text-base" 
+              className="formkit-submit shine-effect px-8 py-3 md:px-16 md:py-6 xl:px-8 xl:py-3 font-bold cursor-pointer transition-transform duration-300 hover:scale-105 md:text-2xl xl:text-2xl" 
               style={{
                 color: 'black',
                 background: 'linear-gradient(135deg, #00ffff, #00d4ff, #00ffff)',

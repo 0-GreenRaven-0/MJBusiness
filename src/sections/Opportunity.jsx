@@ -22,13 +22,13 @@ const Opportunity = () => {
       <div className='relative z-50'>
         <div className='p-2 flex flex-col justify-center gap-5'>
           <AppearOnScroll 
-          retrigger={true}
+          
           >
             <h1 className='text-center'>{t('opportunity.title')}
           </h1>
           </AppearOnScroll>
           <AppearOnScroll
-          retrigger={true}
+          
           >
               <p>{t('opportunity.description')}</p>
           </AppearOnScroll>
@@ -38,7 +38,7 @@ const Opportunity = () => {
     threshold={0.3}
     duration={0.5}
     delay={0.3}
-    retrigger={true}>
+    >
     <li className='bl-point'>
       <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
       {t('opportunity.bullet1')}
@@ -50,7 +50,7 @@ const Opportunity = () => {
     threshold={0.3}
     duration={0.5}
     delay={0.4}
-    retrigger={true}>
+    >
     <li className='bl-point'>
       <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
       {t('opportunity.bullet2')}
@@ -62,7 +62,7 @@ const Opportunity = () => {
     threshold={0.3}
     duration={0.5}
     delay={0.5}
-    retrigger={true}>
+    >
     <li className='bl-point'>
       <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
       {t('opportunity.bullet3')}
@@ -74,7 +74,7 @@ const Opportunity = () => {
     threshold={0.3}
     duration={0.5}
     delay={0.6}
-    retrigger={true}>
+    >
     <li className='bl-point'>
       <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
       {t('opportunity.bullet4')}
@@ -86,7 +86,7 @@ const Opportunity = () => {
     threshold={0.3}
     duration={0.5}
     delay={0.7}
-    retrigger={true}>
+    >
     <li className='bl-point'>
       <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
       {t('opportunity.bullet5')}
@@ -98,7 +98,7 @@ const Opportunity = () => {
     threshold={0.3}
     duration={0.5}
     delay={0.8}
-    retrigger={true}>
+    >
     <li className='bl-point'>
       <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
       {t('opportunity.bullet6')}
@@ -107,7 +107,7 @@ const Opportunity = () => {
 </ul>
 
           <AppearOnScroll
-          retrigger={true}
+          
           >
               <h2 className='text-center'>{t('opportunity.socialProof')}</h2>
           </AppearOnScroll>
@@ -122,7 +122,7 @@ const Opportunity = () => {
           gap={"0"}
           />
           <AppearOnScroll
-          retrigger={true}
+          
           >
             <h2 className='text-center'>{t('opportunity.couldBeYou')}</h2>
           </AppearOnScroll>
@@ -130,19 +130,19 @@ const Opportunity = () => {
 
         <div className='flex flex-col gap-5 p-2 pt-5'>
           <AppearOnScroll
-          retrigger={true}
+          
           >
             <h1 className='text-center'>{t('opportunity.ctaTitle')}</h1>
           </AppearOnScroll>
 
           <AppearOnScroll
-          retrigger={true}
+          
           >
               <p>{t('opportunity.ctaDescription')}</p>
           </AppearOnScroll>
 
           <AppearOnScroll
-          retrigger={true}
+          
           >
             <div className=' flex items-center justify-center'>
           <ConverkitForm/>

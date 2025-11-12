@@ -15,7 +15,7 @@ const FreeValue = () => {
             threshold={0.3}
             duration={0.5}
             delay={0.1}
-            retrigger={true}>
+            >
             <h1 className="special-word2 hidden xl:block">{t('freeValue.imageCaption')}</h1>
           </AppearOnScroll>
       </div>
@@ -26,7 +26,7 @@ const FreeValue = () => {
           threshold={0.3}
           duration={0.5}
           delay={0.1}
-          retrigger={true}>
+          >
           <h1>{t('freeValue.titlePart1')}<span className="special-word2 upp">{t('freeValue.titleHighlight')}</span>{t('freeValue.titlePart2')}</h1>
         </AppearOnScroll>
         
@@ -35,7 +35,7 @@ const FreeValue = () => {
           threshold={0.3}
           duration={0.5}
           delay={0.2}
-          retrigger={true}>
+          >
           <h1 className="special-word">{t('freeValue.value')}</h1>
         </AppearOnScroll>
         
@@ -44,7 +44,7 @@ const FreeValue = () => {
           threshold={0.3}
           duration={0.5}
           delay={0.25}
-          retrigger={true}>
+          >
           <p className="p-0">{t('freeValue.description')}</p>
         </AppearOnScroll>
         
@@ -54,7 +54,7 @@ const FreeValue = () => {
             threshold={0.3}
             duration={0.5}
             delay={0.3}
-            retrigger={true}>
+            >
             <li className='bl-point'>
               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
               {t('freeValue.bullet1')}
@@ -66,7 +66,7 @@ const FreeValue = () => {
             threshold={0.3}
             duration={0.5}
             delay={0.4}
-            retrigger={true}>
+            >
             <li className='bl-point'>
               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
               {t('freeValue.bullet2')}
@@ -78,7 +78,7 @@ const FreeValue = () => {
             threshold={0.3}
             duration={0.5}
             delay={0.5}
-            retrigger={true}>
+            >
             <li className='bl-point'>
               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
               {t('freeValue.bullet3')}
@@ -90,7 +90,7 @@ const FreeValue = () => {
             threshold={0.3}
             duration={0.5}
             delay={0.6}
-            retrigger={true}>
+            >
             <li className='bl-point'>
               <FaCheckCircle size={25} color='cyan' style={{ minWidth: '25px', minHeight: '25px', flexShrink: 0 }}/>
               {t('freeValue.bullet4')}
@@ -103,7 +103,7 @@ const FreeValue = () => {
           threshold={0.3}
           duration={0.5}
           delay={0.7}
-          retrigger={true}> 
+          > 
           <FreeGuideForm/>
         </AppearOnScroll>
       </div>

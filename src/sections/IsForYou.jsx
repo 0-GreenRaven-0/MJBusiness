@@ -6,7 +6,7 @@ const IsForYou = () => {
 
   return (
     <div className="p-2 py-10">
-        <h1 className="text-center">{t('isForYou.heading')} <span className="special-word2">{t('isForYou.getrich')}</span> </h1>
+        <h1 className="text-center">{t('isForYou.heading')} <span className="special-word2">{t('isForYou.getRich')}</span> </h1>
         <h2>{t('isForYou.subheading')}</h2>
         <br/>
         <div className="flex flex-col xl:flex-row gap-5">

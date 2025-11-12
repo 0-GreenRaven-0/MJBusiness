@@ -111,7 +111,7 @@ const Testimonials = () => {
         <AppearOnScroll 
         animation="fade-up"
         threshold={0.5}
-        retrigger={true}
+        
         >
             <h1 className="text-center md:text-5xl md:pb-10">
               {t('testimonials.studentsCountPrefix')}<span ref={countRef} className="headline text-4xl md:text-6xl text-cyan-500 inline-block min-w-[100px] tabular-nums">{count}</span>{t('testimonials.studentsCountSuffix')}
@@ -125,7 +125,7 @@ const Testimonials = () => {
             {testimonials.map((img, index) => (
               <AppearOnScroll 
                 key={index}
-                retrigger={true} 
+                 
                 animation={index % 2 === 0 ? "fade-right" : "fade-left"} 
                 className={index % 2 === 0 ? "self-end" : ""}
                 threshold={0.3}
@@ -142,7 +142,7 @@ const Testimonials = () => {
     {testimonials.map((img, index) => (
       <AppearOnScroll 
         key={index}
-        retrigger={true} 
+         
         animation="fade-up" 
         threshold={0.3}
         delay={index * 0.1}
@@ -157,7 +157,7 @@ const Testimonials = () => {
         <AppearOnScroll 
         animation="fade-up"
         threshold={0.5}
-        retrigger={true}
+        
         >
             <h1 className="text-center md:text-5xl md:pb-10">
             {t('testimonials.businessesCountPrefix')}<span ref={countRef2} className="headline text-4xl md:text-6xl text-cyan-500 inline-block min-w-[100px] tabular-nums">{count2}</span>{t('testimonials.businessesCountSuffix')}
@@ -171,7 +171,7 @@ const Testimonials = () => {
             {caseStudies.map((img, index) => (
               <AppearOnScroll 
                 key={index}
-                retrigger={true} 
+                 
                 animation={index % 2 === 0 ? "fade-right" : "fade-left"} 
                 className={index % 2 === 0 ? "self-end" : ""}
                 threshold={0.3}
@@ -189,7 +189,7 @@ const Testimonials = () => {
             <div className="grid grid-cols-2 gap-5">
               <div className="col-start-1 col-end-2 mx-auto w-full">
                 <AppearOnScroll 
-                  retrigger={true} 
+                   
                   animation="fade-up" 
                   threshold={0.3}
                   delay={0}
@@ -204,7 +204,7 @@ const Testimonials = () => {
               {caseStudies.slice(1).map((img, index) => (
                 <AppearOnScroll 
                   key={index + 1}
-                  retrigger={true} 
+                   
                   animation="fade-up" 
                   threshold={0.3}
                   delay={(index + 1) * 0.1}
