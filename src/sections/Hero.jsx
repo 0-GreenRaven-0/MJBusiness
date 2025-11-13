@@ -12,10 +12,11 @@ const Hero = () => {
       <Header/>
         <div className='flex-center relative z-50'>
 
+            <h2>{t('hero.subtitle')}</h2>
             <h1 className='text-center md:w-[65%] md:text-4xl'>
                 {t('hero.titlePart1')}<span className='special-word'>{t('hero.titleHighlight1')}</span>{t('hero.titlePart2')}<span className='special-word'>{t('hero.titleHighlight2')}</span>{t('hero.titlePart3')}<span className='special-word'>{t('hero.titleHighlight3')}</span>{t('hero.titlePart4')}
             </h1>
-            <h2>{t('hero.subtitle')}</h2>
+           
             <br/>
 
             <div className='flex flex-col xl:flex-row md:p-10 justify-center md:items-center gap-5'>
@@ -98,6 +99,7 @@ const Hero = () => {
                       >
                         <ConverkitForm/>
                     </AppearOnScroll>
+                    <h2 className='w-120'>{t('hero.smallCTA')}</h2>
                 </div>
             </div>
             <br/>

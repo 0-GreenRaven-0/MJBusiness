@@ -3,7 +3,7 @@
     "languageToggle": "English"
   },
   "hero": {
-    "subtitle": "Everything you need to start so you don't have to learn from zero & waste your budget!",
+    "subtitle": "Start your dropshipping business today without wasting your time & budget!",
     "title": "The dropshipping software that made e-commerce easier, no massive inventory needed. Start small, save money, and scale smart from day one.",
     "titlePart1": "The ",
     "titleHighlight1": "dropshipping software",
@@ -16,7 +16,8 @@
     "bullet1": "Start dropshipping without massive inventory costs",
     "bullet2": "Earn real income online in dollars from anywhere",
     "bullet3": "Test products and scale smart with local dropshipping",
-    "bullet4": "Get proven strategies + real support every step"
+    "bullet4": "Get proven strategies + real support every step",
+    "smallCTA":"Subscribe to join our community and access the tools that helped hunderds of individuals start their online business!"
   },
     "aboutMajd": {
     "title": "Who is Majd Abdulsalam?",
@@ -77,16 +78,16 @@
     "businessesCountSuffix": "+ Businesses launched & scaled"
   },
    "aboutSaas": {
-    "title": "Never waste your time & budget while trying to learn to start your own business",
-    "description": "It's the first dropshipping software to ever exist in the Arab Region that completely changes how you start and run your e-commerce business.",
+    "title": "Start your online business the smart way in day one without wasting your time & budget",
+    "description": "The first dropshipping software in the Arab Region, designed to help you start your dropshipping business without learning from scratch. Everything you need: tools, strategies, guides, and real-time support.",
     "subtitle": "With it, you'll access to the following:",
-    "card1": "Test products without ordering bulk inventory. See what sells before you invest big.",
+    "card1": "Test products without ordering bulk inventory & List of winning products",
     "card2": "Built-in AI trained on Majd's expertise to guide you 24/7 as you build your business.",
-    "card3": "Get help from experienced advisors through weekly calls, group coaching, and direct community support.",
-    "card4": "Access proven strategies, step by step courses, and real methods to succeed.",
-    "moreInside": "And much more inside!",
+    "card3": "Experienced Advisors to guide you step by step and track your progress",
+    "card4": "Proven methods and tested strategies to dominate your competitors",
+    "moreInside": "And a lot more tools & features!",
     "ctaQuestion": "Want the complete breakdown and access details?",
-    "pride": "This software has outshined traditional dropshipping and changed the game for hundreds of businesses.",
+    "pride": "Hundreds of businesses have already launched and scaled using our platform.",
     "testimonialIntro": "But you don't have to take our word for it..."
   },
   "confirmationPage":{
@@ -107,7 +108,7 @@
     "bullet1": "Find a winning product that solves a real problem",
     "bullet2": "Run ads on social media to reach your buying customers",
     "bullet3": "Have the product shipped directly from supplier to your customers",
-    "closing": "Based on this model, Majd was able to develop his dropshipping software that contains the tools, knowledge, strategies, and all his experience so you never have to start from scratch."
+    "closing": "Dropshipping is a proven business model that lets you start small, test fast, and scale without the burden of inventory or warehouses. Low risk, high potential that's what makes it work."
   },
   "dropshippingCircle": {
   "product": "Product",

@@ -5,7 +5,7 @@
   --color-tertiary: hsl(246, 80%, 20%);
   --color-accent: hsl(126, 80%, 20%);
 
-  --color-primary: hsl(186, 50%, 10%);
+  --color-primary: hsl(186, 50%, 8%);
   --color-secondary-dark: hsl(186, 50%, 90%);
   --color-tertiary-dark: hsl(246, 80%, 80%);
   --color-accent-dark: hsl(126, 80%, 80%);
@@ -183,15 +183,15 @@ p{
   }
 
   .cards-container{
-    @apply grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center p-2 xl:px-40 md:py-10 xl:py-8
+    @apply flex flex-wrap gap-5 justify-center py-5
   }
 
-.card{
-    @apply flex flex-col items-center border-4 border-cyan-400 p-4 rounded-4xl w-60 md:w-80 md:h-95 xl:w-75 gap-5 h-85 xl:justify-center hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer
+  .card{
+    @apply flex flex-col items-center justify-center p-2 rounded-br-2xl rounded-tl-2xl border-3 border-white w-55 h-70 md:h-90 xl:h-70 gap-5 cursor-pointer hover:scale-105 transition-all duration-200
   }
 
   .card-img{
-    @apply w-35
+    @apply w-30
   }
 
   .card-desc{
@@ -334,5 +334,3 @@ p{
   scrollbar-width: thin;
   scrollbar-color: cyan hsl(186, 50%, 10%);
 }
-
-

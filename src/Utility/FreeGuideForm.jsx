@@ -57,7 +57,7 @@ const FreeGuideForm = () => {
           <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields flex flex-col md:flex-row gap-3 items-center md:gap-6">
             <div className="formkit-field flex-1 w-full">
               <input 
-                className="formkit-input w-full px-4 py-3 md:px-8 md:py-6 xl:px-4 xl:py-3 placeholder-cyan-300 md:text-2xl xl:text-base" 
+                className="formkit-input w-full px-4 py-3 md:px-8 md:py-6 xl:px-4 xl:py-3 placeholder-cyan-300 md:text-2xl xl:text-xl" 
                 name="email_address" 
                 aria-label="Email Address" 
                 placeholder={t('form.emailPlaceholder')}
@@ -74,7 +74,7 @@ const FreeGuideForm = () => {
             </div>
             <button 
               data-element="submit" 
-              className="uppercase formkit-submit shine-effect px-8 py-3 md:px-16 md:py-6 xl:px-8 xl:py-3 font-bold cursor-pointer transition-transform duration-300 hover:scale-105 md:text-2xl xl:text-base" 
+              className="uppercase formkit-submit shine-effect px-8 py-3 md:px-16 md:py-6 xl:px-8 xl:py-3 font-bold cursor-pointer transition-transform duration-300 hover:scale-105 md:text-2xl xl:text-xl" 
               style={{
                 color: 'black',
                 background: 'linear-gradient(135deg, #00ffff, #00d4ff, #00ffff)',
