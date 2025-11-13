@@ -21,22 +21,30 @@ const AboutSaas = () => {
         </AppearOnScroll>
 
          <div className="cards-container">
-            <div className='card bg-darkCyan'>
+          <AppearOnScroll animation="fade-left" delay={0.2}>
+              <div className='card bg-darkCyan'>
               <img src='https://ik.imagekit.io/greenraven/MJ/system-update.png?updatedAt=1761725579002' className='card-img'/>
               <h2 className='card-desc'>{t('aboutSaas.card1')}</h2>
             </div>
+          </AppearOnScroll>
+          <AppearOnScroll animation="fade-left" delay={0.4}>
             <div className='card bg-darkCyan'>
               <img src='https://ik.imagekit.io/greenraven/MJ/artificial-intelligence.png?updatedAt=1761725579307' className='card-img'/>
               <h2 className='card-desc'>{t('aboutSaas.card2')}</h2>
             </div>
+          </AppearOnScroll>
+          <AppearOnScroll animation="fade-left" delay={0.6}>
             <div className='card bg-darkCyan'>
               <img src='https://ik.imagekit.io/greenraven/MJ/marketing-agent.png?updatedAt=1761725579274' className='card-img'/>
               <h2 className='card-desc'>{t('aboutSaas.card3')}</h2>
             </div>
-            <div className='card bg-darkCyan'>
+          </AppearOnScroll>
+          <AppearOnScroll animation="fade-left" delay={0.8}>
+              <div className='card bg-darkCyan'>
               <img src='https://ik.imagekit.io/greenraven/MJ/strategy.png?updatedAt=1761725578959' className='card-img'/>
               <h2 className='card-desc'>{t('aboutSaas.card4')}</h2>
             </div>
+          </AppearOnScroll>
          </div>
 
         <div className="flex flex-col gap-2 md:gap-5 xl:gap-2 xl:px-80">

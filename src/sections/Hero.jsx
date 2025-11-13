@@ -99,7 +99,10 @@ const Hero = () => {
                       >
                         <ConverkitForm/>
                     </AppearOnScroll>
-                    <h2 className='w-120'>{t('hero.smallCTA')}</h2>
+                    <AppearOnScroll>
+                     <h2 className='w-120'>{t('hero.smallCTA')}</h2>
+                    </AppearOnScroll>
+                    
                 </div>
             </div>
             <br/>

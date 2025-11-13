@@ -1,5 +1,6 @@
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa"
 import { useTranslation } from "react-i18next"
+import AppearOnScroll from '../Utility/AppearOnScroll'
 
 const IsForYou = () => {
     const {t} = useTranslation()
@@ -10,7 +11,8 @@ const IsForYou = () => {
         <h2>{t('isForYou.subheading')}</h2>
         <br/>
         <div className="flex flex-col xl:flex-row gap-5">
-          <div className="border-5 p-2 rounded-4xl">
+          <AppearOnScroll animation="fade-right" threshold={0.5} delay={0.4}>
+            <div className="border-5 p-2 rounded-4xl">
             <h2 className="pb-2 text-xl">{t('isForYou.forYouTitle')}</h2>
             <ul className='flex flex-col items-start gap-5'>
               {t('isForYou.forYouPoints', { returnObjects: true }).map((point, index) => (
@@ -21,6 +23,8 @@ const IsForYou = () => {
               ))}
             </ul>
           </div>
+          </AppearOnScroll>
+          <AppearOnScroll animation="fade-left" threshold={0.5} delay={0.4}>
           <div className="border-5 p-2 rounded-4xl">
             <h2 className="pb-2 text-xl">{t('isForYou.notForYouTitle')}</h2>
             <ul className='flex flex-col items-start gap-5'>
@@ -32,6 +36,7 @@ const IsForYou = () => {
               ))}
             </ul>
           </div>
+          </AppearOnScroll>
         </div>
     </div>
   )
