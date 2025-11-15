@@ -4,7 +4,8 @@ const Footer = () => {
   const {t} = useTranslation()
   
   return (
-    <footer className="text-gray-400 py-10 px-5 text-xs leading-relaxed">
+    <footer className="relative text-gray-400 py-10 px-5 text-xs leading-relaxed">
+      <div className='bg-patterns w-full h-full hero-asset2 absolute bottom-0 right-0 z-0 opacity-30'/>
       <div className="max-w-5xl mx-auto space-y-4">
         
         {/* Copyright */}

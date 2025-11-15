@@ -7,6 +7,7 @@ import Opportunity from "./sections/Opportunity"
 import Footer from "./sections/Footer"
 import Dropshipping from "./sections/Dropshipping"
 import IsForYou from "./sections/IsForYou"
+import ParticleBackground from "./Utility/ParticleBackground"
 
 const MainPage = () => {
   return (
@@ -15,8 +16,10 @@ const MainPage = () => {
       <AboutMajd/>
       <AboutSaas/>
       <Testimonials/>
+      <div className="bg3">
       <IsForYou/>
       <Dropshipping/>
+      </div>
       <FreeValue/>
       <Opportunity/>
       <Footer/>
@@ -25,3 +28,6 @@ const MainPage = () => {
 }
 
 export default MainPage
+
+/* <div className="relative overflow-hidden">
+ <ParticleBackground /> */

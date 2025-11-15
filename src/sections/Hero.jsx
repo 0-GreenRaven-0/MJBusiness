@@ -3,6 +3,7 @@ import {FaCheckCircle} from 'react-icons/fa';
 import ConverkitForm from '../Utility/ConverkitForm';
 import { useTranslation } from 'react-i18next';
 import Header from './Header';
+import CustomVideo from '../Utility/CustomVideo';
 
 const Hero = () => {
   const {t} = useTranslation()
@@ -19,14 +20,14 @@ const Hero = () => {
            
             <br/>
 
-            <div className='flex flex-col xl:flex-row md:p-10 justify-center md:items-center gap-5'>
+            <div className='flex flex-col xl:flex-row md:p-10 justify-center md:items-center gap-5 w-90 md:w-fit'>
                 <AppearOnScroll 
                   animation="fade-up"
                   threshold={0.1}
                   duration={0.5}
                   delay={0.2}
                   >
-                  <img src='https://ik.imagekit.io/greenraven/MJ/majdHero.png?updatedAt=1761577920517' className="md:w-170 xl:w-140"/>
+                 <CustomVideo/>
                 </AppearOnScroll>
 
                 <div className='flex flex-col items-center gap-5'>
@@ -100,7 +101,7 @@ const Hero = () => {
                         <ConverkitForm/>
                     </AppearOnScroll>
                     <AppearOnScroll>
-                     <h2 className='w-120'>{t('hero.smallCTA')}</h2>
+                     <h2 className='w-90 md:w-fit'>{t('hero.smallCTA')}</h2>
                     </AppearOnScroll>
                     
                 </div>

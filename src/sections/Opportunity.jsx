@@ -154,6 +154,7 @@ const Opportunity = () => {
 
       {/* Background pattern - below content */}
       <div className='bg-patterns w-full h-[50%] hero-asset absolute inset-0 z-0 opacity-30'/>
+      
     </div>
   )
 }
